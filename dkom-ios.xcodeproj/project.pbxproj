@@ -14,6 +14,20 @@
 		813DAB9121E4F7A40031F6D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813DAB8F21E4F7A40031F6D5 /* LaunchScreen.storyboard */; };
 		813DAB9C21E4F7A40031F6D5 /* dkom_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DAB9B21E4F7A40031F6D5 /* dkom_iosTests.swift */; };
 		813DABA721E4F7A40031F6D5 /* dkom_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DABA621E4F7A40031F6D5 /* dkom_iosUITests.swift */; };
+		813DABB521E4F8F90031F6D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DABB421E4F8F90031F6D5 /* LoginViewController.swift */; };
+		813DABB721E4F90E0031F6D5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DABB621E4F90E0031F6D5 /* RegisterViewController.swift */; };
+		813DABB921E4FBDA0031F6D5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DABB821E4FBDA0031F6D5 /* HomeViewController.swift */; };
+		813DABBB21E4FCAB0031F6D5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DABBA21E4FCAB0031F6D5 /* WelcomeViewController.swift */; };
+		813DABBE21E4FD310031F6D5 /* TFUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DABBD21E4FD310031F6D5 /* TFUser.swift */; };
+		813DABC021E500920031F6D5 /* NotificationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DABBF21E500920031F6D5 /* NotificationExtensions.swift */; };
+		813DABC221E50AB00031F6D5 /* CreateCandidateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DABC121E50AB00031F6D5 /* CreateCandidateViewController.swift */; };
+		813DABC521E50B5B0031F6D5 /* CandidateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DABC321E50B5B0031F6D5 /* CandidateCell.swift */; };
+		813DABC621E50B5B0031F6D5 /* CandidateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813DABC421E50B5B0031F6D5 /* CandidateCell.xib */; };
+		813DABC821E50C380031F6D5 /* TFCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DABC721E50C380031F6D5 /* TFCandidate.swift */; };
+		813DABCB21E518790031F6D5 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DABCA21E518790031F6D5 /* UIImageExtensions.swift */; };
+		998E3EBAA63C00547147D259 /* Pods_dkom_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF47A19BBA77A867EAAC19D /* Pods_dkom_iosTests.framework */; };
+		C0F601B935B77841E7D77243 /* Pods_dkom_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F56C7322B56D6ECD9D1FAC0 /* Pods_dkom_ios.framework */; };
+		E6793E96FF82C749FA855F59 /* Pods_dkom_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7BECCC371321282767FB5F /* Pods_dkom_iosUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1257896FDDE69BF8F89F622D /* Pods-dkom-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dkom-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dkom-ios/Pods-dkom-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		7F56C7322B56D6ECD9D1FAC0 /* Pods_dkom_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dkom_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		813DAB8321E4F7A30031F6D5 /* dkom-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dkom-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		813DAB8621E4F7A30031F6D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		813DAB8821E4F7A30031F6D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +63,24 @@
 		813DABA221E4F7A40031F6D5 /* dkom-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dkom-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		813DABA621E4F7A40031F6D5 /* dkom_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dkom_iosUITests.swift; sourceTree = "<group>"; };
 		813DABA821E4F7A40031F6D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		813DABB421E4F8F90031F6D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		813DABB621E4F90E0031F6D5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		813DABB821E4FBDA0031F6D5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		813DABBA21E4FCAB0031F6D5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		813DABBD21E4FD310031F6D5 /* TFUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFUser.swift; sourceTree = "<group>"; };
+		813DABBF21E500920031F6D5 /* NotificationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtensions.swift; sourceTree = "<group>"; };
+		813DABC121E50AB00031F6D5 /* CreateCandidateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCandidateViewController.swift; sourceTree = "<group>"; };
+		813DABC321E50B5B0031F6D5 /* CandidateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateCell.swift; sourceTree = "<group>"; };
+		813DABC421E50B5B0031F6D5 /* CandidateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CandidateCell.xib; sourceTree = "<group>"; };
+		813DABC721E50C380031F6D5 /* TFCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFCandidate.swift; sourceTree = "<group>"; };
+		813DABCA21E518790031F6D5 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		AD2BA67C5016CD5475C3DEFC /* Pods-dkom-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dkom-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dkom-iosTests/Pods-dkom-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C2F9A52368A375BD63E66C7B /* Pods-dkom-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dkom-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dkom-iosUITests/Pods-dkom-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C48841C8F1C1E170E6536E8B /* Pods-dkom-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dkom-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-dkom-ios/Pods-dkom-ios.release.xcconfig"; sourceTree = "<group>"; };
+		C5E65F654EE34100BDAA7471 /* Pods-dkom-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dkom-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dkom-iosTests/Pods-dkom-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF7BECCC371321282767FB5F /* Pods_dkom_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dkom_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6EB9190DB9199D446FDC91E /* Pods-dkom-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dkom-iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dkom-iosUITests/Pods-dkom-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FDF47A19BBA77A867EAAC19D /* Pods_dkom_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dkom_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F601B935B77841E7D77243 /* Pods_dkom_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				998E3EBAA63C00547147D259 /* Pods_dkom_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6793E96FF82C749FA855F59 /* Pods_dkom_iosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +118,8 @@
 				813DAB9A21E4F7A40031F6D5 /* dkom-iosTests */,
 				813DABA521E4F7A40031F6D5 /* dkom-iosUITests */,
 				813DAB8421E4F7A30031F6D5 /* Products */,
+				B085CE81BAC1E9C84A2A29FA /* Pods */,
+				E6DA0EF3171F32A2D1FCBDA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +136,22 @@
 		813DAB8521E4F7A30031F6D5 /* dkom-ios */ = {
 			isa = PBXGroup;
 			children = (
+				813DABC921E5186E0031F6D5 /* Extensions */,
+				813DABBC21E4FD1F0031F6D5 /* Model */,
 				813DAB8621E4F7A30031F6D5 /* AppDelegate.swift */,
 				813DAB8821E4F7A30031F6D5 /* ViewController.swift */,
 				813DAB8A21E4F7A30031F6D5 /* Main.storyboard */,
 				813DAB8D21E4F7A40031F6D5 /* Assets.xcassets */,
 				813DAB8F21E4F7A40031F6D5 /* LaunchScreen.storyboard */,
 				813DAB9221E4F7A40031F6D5 /* Info.plist */,
+				813DABB421E4F8F90031F6D5 /* LoginViewController.swift */,
+				813DABB621E4F90E0031F6D5 /* RegisterViewController.swift */,
+				813DABB821E4FBDA0031F6D5 /* HomeViewController.swift */,
+				813DABBA21E4FCAB0031F6D5 /* WelcomeViewController.swift */,
+				813DABBF21E500920031F6D5 /* NotificationExtensions.swift */,
+				813DABC121E50AB00031F6D5 /* CreateCandidateViewController.swift */,
+				813DABC321E50B5B0031F6D5 /* CandidateCell.swift */,
+				813DABC421E50B5B0031F6D5 /* CandidateCell.xib */,
 			);
 			path = "dkom-ios";
 			sourceTree = "<group>";
@@ -125,6 +174,46 @@
 			path = "dkom-iosUITests";
 			sourceTree = "<group>";
 		};
+		813DABBC21E4FD1F0031F6D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				813DABBD21E4FD310031F6D5 /* TFUser.swift */,
+				813DABC721E50C380031F6D5 /* TFCandidate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		813DABC921E5186E0031F6D5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				813DABCA21E518790031F6D5 /* UIImageExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B085CE81BAC1E9C84A2A29FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1257896FDDE69BF8F89F622D /* Pods-dkom-ios.debug.xcconfig */,
+				C48841C8F1C1E170E6536E8B /* Pods-dkom-ios.release.xcconfig */,
+				AD2BA67C5016CD5475C3DEFC /* Pods-dkom-iosTests.debug.xcconfig */,
+				C5E65F654EE34100BDAA7471 /* Pods-dkom-iosTests.release.xcconfig */,
+				C2F9A52368A375BD63E66C7B /* Pods-dkom-iosUITests.debug.xcconfig */,
+				F6EB9190DB9199D446FDC91E /* Pods-dkom-iosUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E6DA0EF3171F32A2D1FCBDA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F56C7322B56D6ECD9D1FAC0 /* Pods_dkom_ios.framework */,
+				FDF47A19BBA77A867EAAC19D /* Pods_dkom_iosTests.framework */,
+				EF7BECCC371321282767FB5F /* Pods_dkom_iosUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 813DABAB21E4F7A40031F6D5 /* Build configuration list for PBXNativeTarget "dkom-ios" */;
 			buildPhases = (
+				16BEF5C615950CEFEC5B0651 /* [CP] Check Pods Manifest.lock */,
 				813DAB7F21E4F7A30031F6D5 /* Sources */,
 				813DAB8021E4F7A30031F6D5 /* Frameworks */,
 				813DAB8121E4F7A30031F6D5 /* Resources */,
+				554CDABF6801335B663F1BB3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +240,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 813DABAE21E4F7A40031F6D5 /* Build configuration list for PBXNativeTarget "dkom-iosTests" */;
 			buildPhases = (
+				8D1A4D014D6EF27C2D5665F0 /* [CP] Check Pods Manifest.lock */,
 				813DAB9321E4F7A40031F6D5 /* Sources */,
 				813DAB9421E4F7A40031F6D5 /* Frameworks */,
 				813DAB9521E4F7A40031F6D5 /* Resources */,
@@ -167,6 +259,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 813DABB121E4F7A40031F6D5 /* Build configuration list for PBXNativeTarget "dkom-iosUITests" */;
 			buildPhases = (
+				0D6601153FEA94C873CDBC03 /* [CP] Check Pods Manifest.lock */,
 				813DAB9E21E4F7A40031F6D5 /* Sources */,
 				813DAB9F21E4F7A40031F6D5 /* Frameworks */,
 				813DABA021E4F7A40031F6D5 /* Resources */,
@@ -232,6 +325,7 @@
 				813DAB9121E4F7A40031F6D5 /* LaunchScreen.storyboard in Resources */,
 				813DAB8E21E4F7A40031F6D5 /* Assets.xcassets in Resources */,
 				813DAB8C21E4F7A30031F6D5 /* Main.storyboard in Resources */,
+				813DABC621E50B5B0031F6D5 /* CandidateCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +345,132 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D6601153FEA94C873CDBC03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dkom-iosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16BEF5C615950CEFEC5B0651 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dkom-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		554CDABF6801335B663F1BB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-dkom-ios/Pods-dkom-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/CropViewController/CropViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/IQAudioRecorderController/IQAudioRecorderController.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageRow/ImageRow.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/SCSiriWaveformView/SCSiriWaveformView.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CropViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQAudioRecorderController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageRow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCSiriWaveformView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dkom-ios/Pods-dkom-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D1A4D014D6EF27C2D5665F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dkom-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		813DAB7F21E4F7A30031F6D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813DABB921E4FBDA0031F6D5 /* HomeViewController.swift in Sources */,
+				813DABC221E50AB00031F6D5 /* CreateCandidateViewController.swift in Sources */,
+				813DABB521E4F8F90031F6D5 /* LoginViewController.swift in Sources */,
+				813DABCB21E518790031F6D5 /* UIImageExtensions.swift in Sources */,
 				813DAB8921E4F7A30031F6D5 /* ViewController.swift in Sources */,
+				813DABBB21E4FCAB0031F6D5 /* WelcomeViewController.swift in Sources */,
+				813DABC821E50C380031F6D5 /* TFCandidate.swift in Sources */,
 				813DAB8721E4F7A30031F6D5 /* AppDelegate.swift in Sources */,
+				813DABBE21E4FD310031F6D5 /* TFUser.swift in Sources */,
+				813DABC021E500920031F6D5 /* NotificationExtensions.swift in Sources */,
+				813DABB721E4F90E0031F6D5 /* RegisterViewController.swift in Sources */,
+				813DABC521E50B5B0031F6D5 /* CandidateCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,16 +643,18 @@
 		};
 		813DABAC21E4F7A40031F6D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1257896FDDE69BF8F89F622D /* Pods-dkom-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 42Y2HHXZBK;
 				INFOPLIST_FILE = "dkom-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "app.trench.ios.ui.components.dkom-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = app.demo.dkom.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,16 +663,18 @@
 		};
 		813DABAD21E4F7A40031F6D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C48841C8F1C1E170E6536E8B /* Pods-dkom-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 42Y2HHXZBK;
 				INFOPLIST_FILE = "dkom-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "app.trench.ios.ui.components.dkom-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = app.demo.dkom.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -466,6 +683,7 @@
 		};
 		813DABAF21E4F7A40031F6D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD2BA67C5016CD5475C3DEFC /* Pods-dkom-iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +705,7 @@
 		};
 		813DABB021E4F7A40031F6D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5E65F654EE34100BDAA7471 /* Pods-dkom-iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +727,7 @@
 		};
 		813DABB221E4F7A40031F6D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2F9A52368A375BD63E66C7B /* Pods-dkom-iosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +748,7 @@
 		};
 		813DABB321E4F7A40031F6D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6EB9190DB9199D446FDC91E /* Pods-dkom-iosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
