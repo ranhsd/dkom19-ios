@@ -15,6 +15,10 @@ target 'dkom-ios' do
   pod 'CropViewController'  
   pod 'ImageRow', '~> 3.0'
   pod 'IQAudioRecorderController'
+  pod 'DeepDiff'
+  pod 'ParseLiveQuery' , :git => 'https://github.com/parse-community/ParseLiveQuery-iOS-OSX.git'
+  pod 'TBEmptyDataSet'
+  pod 'KDEAudioPlayer', :git => 'https://github.com/delannoyk/AudioPlayer.git'
 
   target 'dkom-iosTests' do
     inherit! :search_paths

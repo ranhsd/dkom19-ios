@@ -27,21 +27,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.initialize(with: config)
         
         if PFUser.current() == nil {
-            
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let registerController = storyboard.instantiateViewController(withClass: WelcomeViewController.self)
-            let navigationController = UINavigationController(rootViewController: registerController!)
-            self.window?.rootViewController = navigationController
+            self.presentWelcomeScreen()
         } else {
             self.presentHome()
         }
+        
+        // subscribe to observers
         
         NotificationCenter.default.addObserver(self, selector: #selector(showHome(notification:)), name: .registered, object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(showHome(notification:)), name: .loggedIn, object: nil)
         
+        NotificationCenter.default.addObserver(self, selector: #selector(showWelcome(notification:)), name: .loggedOut, object: nil)
+        
         return true
     }
+    
+    
+    //    MARK: Home view controller presentation
     
     @objc func showHome(notification: NSNotification) {
         self.presentHome()
@@ -53,6 +56,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = UINavigationController(rootViewController: registerController!)
         self.window?.rootViewController = navigationController
     }
+    
+    //    MARK: Welcome view controller presentation
+    
+    @objc func showWelcome(notification: NSNotification) {
+        self.presentWelcomeScreen()
+    }
+    
+    private func presentWelcomeScreen() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let registerController = storyboard.instantiateViewController(withClass: WelcomeViewController.self)
+        let navigationController = UINavigationController(rootViewController: registerController!)
+        self.window?.rootViewController = navigationController
+    }
+
     
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

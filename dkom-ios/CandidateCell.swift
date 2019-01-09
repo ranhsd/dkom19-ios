@@ -11,13 +11,18 @@ import Kingfisher
 
 class CandidateCell: UITableViewCell {
     
-    @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var photoImageView: UIImageView! {
+        didSet {
+            photoImageView.layer.masksToBounds = true
+            photoImageView.layer.cornerRadius = photoImageView.frame.size.height / 2
+        }
+    }
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var bioLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -33,7 +38,8 @@ class CandidateCell: UITableViewCell {
             self.photoImageView.kf.setImage(with: url, options: [.transition(.fade(0.5))])
         }
         
-        
+        self.nameLabel.text = candidate.name
+        self.bioLabel.text = candidate.bio
     }
     
 }

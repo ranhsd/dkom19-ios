@@ -11,5 +11,6 @@ import Foundation
 extension Notification.Name {
     static let registered = Notification.Name("registered")
     static let loggedIn = Notification.Name("loggedIn")
+    static let loggedOut = Notification.Name("loggedOut")
     
 }

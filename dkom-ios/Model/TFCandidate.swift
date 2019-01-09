@@ -14,6 +14,7 @@ class TFCandidate: PFObject {
     @NSManaged public var bio: String?
     @NSManaged public var profilePicture: PFFileObject?
     @NSManaged public var audioBio: PFFileObject?
+    @NSManaged public var createdBy: TFUser?
 }
 
 extension TFCandidate : PFSubclassing {

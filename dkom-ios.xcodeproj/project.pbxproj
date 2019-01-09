@@ -25,6 +25,7 @@
 		813DABC621E50B5B0031F6D5 /* CandidateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813DABC421E50B5B0031F6D5 /* CandidateCell.xib */; };
 		813DABC821E50C380031F6D5 /* TFCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DABC721E50C380031F6D5 /* TFCandidate.swift */; };
 		813DABCB21E518790031F6D5 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DABCA21E518790031F6D5 /* UIImageExtensions.swift */; };
+		813DABCD21E541B20031F6D5 /* TFSimpleMessagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DABCC21E541B20031F6D5 /* TFSimpleMessagePresenter.swift */; };
 		998E3EBAA63C00547147D259 /* Pods_dkom_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF47A19BBA77A867EAAC19D /* Pods_dkom_iosTests.framework */; };
 		C0F601B935B77841E7D77243 /* Pods_dkom_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F56C7322B56D6ECD9D1FAC0 /* Pods_dkom_ios.framework */; };
 		E6793E96FF82C749FA855F59 /* Pods_dkom_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7BECCC371321282767FB5F /* Pods_dkom_iosUITests.framework */; };
@@ -74,6 +75,7 @@
 		813DABC421E50B5B0031F6D5 /* CandidateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CandidateCell.xib; sourceTree = "<group>"; };
 		813DABC721E50C380031F6D5 /* TFCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFCandidate.swift; sourceTree = "<group>"; };
 		813DABCA21E518790031F6D5 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		813DABCC21E541B20031F6D5 /* TFSimpleMessagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFSimpleMessagePresenter.swift; sourceTree = "<group>"; };
 		AD2BA67C5016CD5475C3DEFC /* Pods-dkom-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dkom-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dkom-iosTests/Pods-dkom-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C2F9A52368A375BD63E66C7B /* Pods-dkom-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dkom-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dkom-iosUITests/Pods-dkom-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C48841C8F1C1E170E6536E8B /* Pods-dkom-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dkom-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-dkom-ios/Pods-dkom-ios.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				813DABC121E50AB00031F6D5 /* CreateCandidateViewController.swift */,
 				813DABC321E50B5B0031F6D5 /* CandidateCell.swift */,
 				813DABC421E50B5B0031F6D5 /* CandidateCell.xib */,
+				813DABCC21E541B20031F6D5 /* TFSimpleMessagePresenter.swift */,
 			);
 			path = "dkom-ios";
 			sourceTree = "<group>";
@@ -400,30 +403,42 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-dkom-ios/Pods-dkom-ios-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts-Swift/BoltsSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/CropViewController/CropViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/DeepDiff/DeepDiff.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/IQAudioRecorderController/IQAudioRecorderController.framework",
 				"${BUILT_PRODUCTS_DIR}/ImageRow/ImageRow.framework",
+				"${BUILT_PRODUCTS_DIR}/KDEAudioPlayer/KDEAudioPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/ParseLiveQuery/ParseLiveQuery.framework",
 				"${BUILT_PRODUCTS_DIR}/SCSiriWaveformView/SCSiriWaveformView.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/TBEmptyDataSet/TBEmptyDataSet.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BoltsSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CropViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeepDiff.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQAudioRecorderController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageRow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KDEAudioPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParseLiveQuery.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCSiriWaveformView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBEmptyDataSet.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -464,6 +479,7 @@
 				813DABB521E4F8F90031F6D5 /* LoginViewController.swift in Sources */,
 				813DABCB21E518790031F6D5 /* UIImageExtensions.swift in Sources */,
 				813DAB8921E4F7A30031F6D5 /* ViewController.swift in Sources */,
+				813DABCD21E541B20031F6D5 /* TFSimpleMessagePresenter.swift in Sources */,
 				813DABBB21E4FCAB0031F6D5 /* WelcomeViewController.swift in Sources */,
 				813DABC821E50C380031F6D5 /* TFCandidate.swift in Sources */,
 				813DAB8721E4F7A30031F6D5 /* AppDelegate.swift in Sources */,

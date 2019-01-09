@@ -10,11 +10,13 @@ import UIKit
 import Parse
 import SVProgressHUD
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController  {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    
+    private var currentTextField: UITextField?
     
 
     override func viewDidLoad() {
@@ -25,6 +27,10 @@ class LoginViewController: UIViewController {
 
     @IBAction func onLoginClicked(_ sender: Any) {
         
+        // hide keyboard
+        self.currentTextField?.resignFirstResponder()
+        
+        // validate form 
         guard let email = self.emailTextField.text, let password = self.passwordTextField.text else {
             return
         }
@@ -56,4 +62,10 @@ class LoginViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+}
+
+extension LoginViewController : UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        self.currentTextField = textField
+    }
 }

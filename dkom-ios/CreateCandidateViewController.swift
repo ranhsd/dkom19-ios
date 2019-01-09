@@ -14,13 +14,22 @@ import IQAudioRecorderController
 import Parse
 import SwifterSwift
 import SVProgressHUD
+import KDEAudioPlayer
 
 class CreateCandidateViewController: FormViewController {
     
-    private lazy var candidate: TFCandidate = TFCandidate()
+    private var audioBioFilePath: String? = nil
+    private lazy var audioPlayer = AudioPlayer()
+    
+    private lazy var candidate: TFCandidate = {
+       let candidate = TFCandidate()
+        candidate.createdBy = TFUser.current()
+        return candidate
+    }()
     
     enum FormFieldsTags : String {
         case profilePicture = "profile_pic"
+        case audioBio = "audio_bio"
     }
     
     override func viewDidLoad() {
@@ -45,6 +54,7 @@ class CreateCandidateViewController: FormViewController {
                 row.clearAction = .no
                 row.allowEditor = true
                 row.useEditedImage = true
+                row.placeholderImage = UIImage(named: "avatar")
                 
                 }.cellSetup({ cell, row in
                     cell.height = { 90 }
@@ -62,9 +72,13 @@ class CreateCandidateViewController: FormViewController {
             <<< TextRow(){row in
                 row.title = "Name"
                 row.placeholder = "Full Name"
-                }.onChange{[unowned self]row in
+                }
+                .cellSetup{cell, _ in
+                    cell.textField.autocapitalizationType = .words
+                }
+                .onChange{[unowned self]row in
                     self.candidate.name = row.value
-            }
+                }
             +++ Section()
             <<< TextAreaRow(){row in
                 row.title = "Bio"
@@ -73,11 +87,13 @@ class CreateCandidateViewController: FormViewController {
                 }.onChange{[unowned self]row in
                     self.candidate.bio = row.value
             }
-            <<< LabelRow() {row in
+            <<< LabelRow(FormFieldsTags.audioBio.rawValue) {row in
                 row.title = "Audio Bio"
-                }.onCellSelection{[unowned self] cell, _ in
+                }.onCellSelection{[unowned self]_,_ in
                     self.presentAudioRecorder()
-            }
+                }.cellSetup{cell, _ in
+                    cell.detailTextLabel?.numberOfLines = 0
+                }
             
             +++ Section()
             <<< ButtonRow(){row in
@@ -93,16 +109,29 @@ class CreateCandidateViewController: FormViewController {
     }
     
     private func presentAudioRecorder() {
-        let audioController = IQAudioRecorderViewController.init()
-        audioController.delegate = self
-        audioController.audioQuality = .medium
-        audioController.maximumRecordDuration = 10
-        audioController.allowCropping = false
-        self.presentBlurredAudioRecorderViewControllerAnimated(audioController)
+        DispatchQueue.main.async {[weak self] in
+            guard let `self` = self else { return }
+            let audioController = IQAudioRecorderViewController()
+            audioController.delegate = self
+            audioController.audioQuality = .medium
+            audioController.maximumRecordDuration = 10
+            audioController.allowCropping = false
+            self.presentBlurredAudioRecorderViewControllerAnimated(audioController)
+        }
+
     }
 
-    
+    private func isFormValid() -> Bool {
+        return self.candidate.profilePicture != nil && self.candidate.name != nil
+    }
     private func saveCandidate() {
+        
+        if (!isFormValid()) {
+            let presenter = SimpleMessagePresenter(title: "Oops!", message: "Candidate name and/or profile picture are missing")
+            presenter.present(on: self, closeHandler: nil)
+            return
+        }
+        
         SVProgressHUD.show()
         
         self.candidate.saveInBackground {[weak self] (success, error) in
@@ -151,14 +180,23 @@ extension CreateCandidateViewController : IQAudioRecorderViewControllerDelegate 
         
         controller.dismiss(animated: true, completion: nil)
         
+        self.audioBioFilePath = filePath
+        
         let url = URL(fileURLWithPath: filePath)
         
         do {
             let data = try Data(contentsOf: url)
-            self.candidate.audioBio = PFFileObject(data: data, contentType: "video/mp4")
+            self.candidate.audioBio = PFFileObject(data: data, contentType: "audio/mpeg")
+            
+            if let row = form.rowBy(tag: FormFieldsTags.audioBio.rawValue) as? LabelRow {
+                row.value = "Tap to modify"
+                row.updateCell()
+            }
+            
         } catch {
             print("error " + error.localizedDescription)
         }
+        
     }
     
     

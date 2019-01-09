@@ -18,6 +18,8 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var registerButton: UIButton!
     
+    private var currentTextField: UITextField?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,6 +29,9 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func onRegisterButtonClicked(_ sender: UIButton) {
+        
+        // hide keyboard
+        self.currentTextField?.resignFirstResponder()
         
         if !self.formIsValid() {
             self.presentFormInvalidAlert()
@@ -77,5 +82,11 @@ class RegisterViewController: UIViewController {
 
     private func presentHome() {
         
+    }
+}
+
+extension RegisterViewController : UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        self.currentTextField = textField
     }
 }
